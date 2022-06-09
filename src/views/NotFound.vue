@@ -1,5 +1,5 @@
 <template>
-  <div class="error">
+  <div class="not_found_page">
     <div>
       <h1>404</h1>
       <div class="box">
@@ -43,9 +43,7 @@ onMounted(() => {
 </script>
 
 <style lang="less" scoped>
-.error {
-  color: rgb(0, 0, 0);
-  background: #fff;
+.not_found_page {
   font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
     "Fira Sans", Avenir, "Helvetica Neue", "Lucida Grande", sans-serif;
   height: 100vh;
@@ -78,6 +76,14 @@ onMounted(() => {
       margin: 0;
       padding: 0;
       cursor: pointer;
+    }
+  }
+}
+
+.dark {
+  .not_found_page {
+    h1 {
+      border-right: 1px solid #fff;
     }
   }
 }
