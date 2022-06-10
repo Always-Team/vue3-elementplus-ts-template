@@ -22,6 +22,7 @@ npm install
 运行项目
 
 ```bash
+npm run lint
 npm run dev
 ```
 
