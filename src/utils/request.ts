@@ -2,6 +2,7 @@ import axios, { type AxiosPromise, type Method } from "axios";
 import config from "./config";
 const instance = axios.create({
   baseURL: config.BaseURL,
+  withCredentials: true,
   timeout: 0,
 });
 instance.interceptors.request.use(

@@ -1,5 +1,8 @@
+const { DEV, VITE_Release, VITE_SERVER_URL } = import.meta.env;
+const isDev = DEV;
 const config = {
-  BaseURL: "https://api.zhangsifan.com/",
-  Release: "0.0.1",
+  isDev,
+  BaseURL: VITE_SERVER_URL,
+  Release: VITE_Release,
 };
 export default config;
