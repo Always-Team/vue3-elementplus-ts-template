@@ -8,6 +8,10 @@ import vueJsx from "@vitejs/plugin-vue-jsx";
 export default defineConfig({
   base: "./",
   plugins: [vue(), vueJsx()],
+  // 开发环境
+  mode: "development",
+  // 正式环境
+  // mode: "production",
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
@@ -15,5 +19,9 @@ export default defineConfig({
   },
   server: {
     host: "0.0.0.0",
+  },
+  build: {
+    brotliSize: true,
+    chunkSizeWarningLimit: 1000,
   },
 });
