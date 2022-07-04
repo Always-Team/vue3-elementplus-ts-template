@@ -1,8 +1,8 @@
-const { DEV, VITE_Release, VITE_SERVER_URL } = import.meta.env;
+const { DEV, VITE_SERVER_URL } = import.meta.env;
 const isDev = DEV;
 const config = {
   isDev,
   BaseURL: VITE_SERVER_URL,
-  Release: VITE_Release,
+  Release: "0.0.1",
 };
 export default config;

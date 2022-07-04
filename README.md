@@ -1,7 +1,7 @@
 # Vue3-ElementPlus-Ts-Template
 
 ![](https://img.shields.io/badge/Vue-%5E3.2.37-42b883)
-![](https://img.shields.io/badge/Elenent--Plus-%5E2.2.4-409eff)
+![](https://img.shields.io/badge/Elenent--Plus-%5E2.2.8-409eff)
 
 > Vue3 + Vite + ElementPlus + TypeScript 模板
 
