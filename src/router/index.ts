@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-
+const { VITE_TITLE } = import.meta.env;
 const router = createRouter({
   history: createWebHashHistory(),
   routes: [
@@ -26,7 +26,7 @@ const router = createRouter({
   ],
 });
 router.beforeEach((to, from, next) => {
-  document.title = `${to.meta.title} | 主标题`;
+  document.title = `${to.meta.title} | ${VITE_TITLE}`;
   next();
 });
 export default router;
