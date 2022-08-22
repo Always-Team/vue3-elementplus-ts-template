@@ -9,9 +9,9 @@ export default defineConfig({
   base: "./",
   plugins: [vue(), vueJsx()],
   // 开发环境
-  mode: "development",
+  // mode: "development",
   // 正式环境
-  // mode: "production",
+  mode: "production",
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
